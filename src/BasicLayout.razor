@@ -13,6 +13,7 @@
             {
                 <CascadingValue Value="MenuExtraRender" Name="MenuExtraRender">
                         <SiderMenu
+                            BaseUrl="@BasePath"
                             MenuData="MenuData"
                             Mode="Mode"
                             Logo="Logo"
@@ -26,7 +27,7 @@
             @if (HeaderRender && Pure)
             {
                 <CascadingValue Value="RightContentRender" Name="RightContentRender">
-                    <HeaderView Logo="Logo" MenuData="MenuData" />
+                    <HeaderView Logo="Logo" MenuData="MenuData" BaseUrl="@BasePath"/>
                 </CascadingValue>
             }
 

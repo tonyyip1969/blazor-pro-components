@@ -40,6 +40,9 @@ namespace AntDesign.Pro.Layout
         [CascadingParameter(Name = nameof(RightContentRender))]
         public RenderFragment RightContentRender { get; set; }
 
+        [Parameter]
+        public string BaseUrl { get; set; } = "/";
+
         public MenuDataItem[] NoChildrenMenuData { get; set; }
 
         protected override void OnInitialized()

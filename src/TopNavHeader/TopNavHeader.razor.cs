@@ -31,6 +31,9 @@ namespace AntDesign.Pro.Layout
         [Parameter] public List<RenderFragment> Links { get; set; }
         [Parameter] public EventCallback<string[]> OnOpenChange { get; set; }
 
+        [Parameter] public string BaseUrl { get; set; } = "/";
+
+
         protected override void OnInitialized()
         {
             base.OnInitialized();

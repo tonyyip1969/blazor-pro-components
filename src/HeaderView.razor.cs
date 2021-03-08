@@ -27,6 +27,8 @@ namespace AntDesign.Pro.Layout
         [Parameter] public RenderFragment HeaderContentRender { get; set; }
         [Parameter] public MenuDataItem[] MenuData { get; set; } = { };
 
+        [Parameter] public string BaseUrl { get; set; } = "/";
+
         protected override void OnInitialized()
         {
             base.OnInitialized();

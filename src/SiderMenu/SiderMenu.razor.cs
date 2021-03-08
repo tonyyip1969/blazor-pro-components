@@ -41,6 +41,8 @@ namespace AntDesign.Pro.Layout
         [Parameter] public EventCallback<MouseEventArgs> OnMenuHeaderClick { get; set; }
         [Parameter] public EventCallback<string[]> OnOpenChange { get; set; }
 
+        [Parameter] public string BaseUrl { get; set; } = "/";
+
         [CascadingParameter(Name = nameof(MenuExtraRender))] 
         public RenderFragment MenuExtraRender { get; set; }
 

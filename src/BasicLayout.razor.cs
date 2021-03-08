@@ -49,6 +49,8 @@ namespace AntDesign.Pro.Layout
         [Parameter] public RenderFragment RightContentRender { get; set; }
         [Inject] public ILogger<BasicLayout> Logger { get; set; }
 
+        [Parameter] public string BasePath { get; set; } = "/";
+
         protected override void OnInitialized()
         {
             Logger.LogInformation("BasicLayout initialized.");
